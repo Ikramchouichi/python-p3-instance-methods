@@ -1,7 +1,14 @@
-#!/usr/bin/env python3
+# lib/dog.py
 
 class Dog:
-    # Class body goes here
+    def bark(self):
+        print("Woof!")
 
-    #Instance method definition
-    pass
+    def sit(self):
+        print("The dog is sitting.")
+
+# This should be outside the Dog class definition
+if __name__ == '__main__':
+    fido = Dog()
+    fido.bark()  # This will print "Woof!"
+    fido.sit()   # This will print "The dog is sitting."
